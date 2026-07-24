@@ -111,6 +111,88 @@
     border: 1px solid var(--750);
 }
 
+.ssui-link-panel {
+    border: 1px solid var(--750);
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 5px;
+}
+.ssui-link-column {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+}
+.ssui-link-block {
+    background-color: var(--800);
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+}
+.ssui-link-block > span {
+    background-color: var(--700);
+    display: inline-block;
+    width: calc(100% - 10px);
+    padding: 0 5px;
+    border-radius: 3px;
+}
+.ssui-link-block:has(.ssui-map) {
+    margin-top: -5px;
+    padding: 0;
+}
+.ssui-link-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    margin-top: 3px;
+    padding: 0 5px;
+    border-radius: 3px;
+    transition: all .3s;
+}
+.ssui-link-item:hover {
+    background-color: var(--750);
+}
+.ssui-link-item > img:first-child {
+    margin-right: 5px;
+}
+.ssui-link-item > a {
+    display: flex;
+    flex-direction: row-reverse;
+    color: var(--000);
+    font-size: 15px;
+    padding: 1px;
+    flex: 1;
+    text-decoration: none;
+}
+.ssui-link-item > a > span:first-child {
+    color: var(--300);
+}
+.ssui-link-item > a > span:nth-child(2) {
+    flex: 1;
+}
+.ssui-link-status-list {
+    width: 100%;
+    background-color: var(--850);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+}
+.ssui-link-status {
+    text-align: right;
+    font-size: 14px;
+    opacity: 0.8;
+    padding: 0 5px;
+}
+
 @media (max-width: 650px) {
     .ssui-fight > div.top {
         display: unset;

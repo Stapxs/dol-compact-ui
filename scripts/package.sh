@@ -1,1 +1,1 @@
-zip -r '../dol-compact-ui.zip' . -x 'scripts/*' '*.DS_Store' '.gitignore' '.git/*'
+zip -r '../dol-compact-ui.zip' . -x 'scripts/*' 'README/*' '*.DS_Store' '.gitignore' '.git/*'
