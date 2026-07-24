@@ -1,1 +1,1 @@
-zip -r '../DoL-SSUI.zip' . -x 'scripts/*' 'js/hot-reload.js' '*.DS_Store'
+zip -r '../dol-compact-ui.zip' . -x 'scripts/*' '*.DS_Store' '.gitignore' '.git/*'

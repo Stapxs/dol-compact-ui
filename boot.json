@@ -1,6 +1,6 @@
 {
-  "name": "dol-ssui",
-  "nickName": "紧凑界面优化",
+  "name": "dol-compact-ui",
+  "nickName": "紧凑界面",
   "version": "0.1.0",
   "styleFileList": [
     "css/ss-ui.css"
@@ -13,7 +13,8 @@
   "tweeFileList": [],
   "imgFileList": [],
   "additionFile": [
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "dependenceInfo": [
     {
