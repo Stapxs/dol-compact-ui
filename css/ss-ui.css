@@ -1,0 +1,133 @@
+#passages {
+    transition: opacity .1s;
+    opacity: 1;
+}
+#passages.ssui-hidden {
+    opacity: 0;
+}
+
+.ssui-fight {
+    padding-bottom: 45px;
+}
+.ssui-fight > div {
+    margin: 3px;
+    padding: 3px;
+}
+.ssui-fight > div.top {
+    display: flex;
+}
+.ssui-fight div.view {
+    border: 1px solid var(--750);
+    background-color: var(--850);
+    margin-left: 10px;
+    display: flex;
+    height: fit-content;
+    flex-direction: column-reverse;
+}
+.ssui-fight div.view > div {
+    border: 1px solid var(--750);
+}
+.ssui-fight div.view > div:first-child {
+    display: none;
+}
+.ssui-fight div.view > div.combat-main {
+    width: 100%;
+}
+.ssui-fight div.view div.combat-xray-arse canvas {
+    max-height: 65px;
+    width: auto;
+}
+
+.ssui-fight div.controller {
+    position: relative;
+    padding-left: calc(2rem + 10px);
+    border: 1px solid var(--750);
+}
+
+.ssui-fight div.controller > div > label:first-child,
+.ssui-fight div.controller > div > label:nth-child(2) {
+    margin-bottom: 10px;
+    width: calc(50% - 25px);
+    text-align: center;
+}
+
+.ssui-fight div.controller label {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: var(--850);
+    padding: 10px;
+}
+.ssui-fight div.controller label:hover {
+    background-color: var(--800);
+}
+.ssui-fight div.controller label select {
+    min-width: unset !important;
+    max-width: 100px !important;
+}
+.ssui-fight div.controller label input {
+    display: none;
+}
+.ssui-fight div.controller label:has(input:checked) {
+    background-color: var(--750);
+}
+
+.ssui-fight div.controller div#replaceAction {
+    flex-direction: column;
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+}
+.ssui-fight div.controller div#replaceAction a {
+    writing-mode: vertical-rl;
+    background-color: var(--800);
+    color: var(--550);
+    padding: 15px 10px;
+    margin-bottom: 10px;
+}
+
+.ssui-fight div.controller div#listContainer {
+    margin-bottom: 0 !important;
+}
+.ssui-fight div.controller div#listContainer > div {
+    background-color: var(--850);
+    margin: 0 5px 10px 0;
+    padding: 5px;
+    width: calc(calc(100% / 3) - 15px);
+}
+.ssui-fight div.controller div#listContainer > div > span:first-child {
+    background-color: var(--750);
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    padding: 5px;
+}
+
+.ssui-map {
+    position: fixed;
+    right: 10px;
+    bottom: 25px;
+    background: var(--850);
+    border: 1px solid var(--750);
+}
+
+@media (max-width: 650px) {
+    .ssui-fight > div.top {
+        display: unset;
+    }
+    .ssui-fight div.controller div#listContainer > div {
+        width: calc(calc(100% / 2) - 15px);
+    }
+
+    .ssui-map {
+        position: relative;
+        background: transparent;
+        border: unset;
+    }
+}
+
+@media (max-width: 500px) {
+    .ssui-fight div.controller div#listContainer > div {
+        width:100%
+    }
+}
